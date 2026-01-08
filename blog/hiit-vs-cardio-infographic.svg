@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="hiitGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff4757;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b7a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardioGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ed573;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5ae592;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#12121a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a26;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#bgGradient)" />
+
+  <!-- Title Section -->
+  <text x="600" y="60" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="bold" letter-spacing="2">WORKOUT SHOWDOWN</text>
+  <line x1="400" y1="80" x2="800" y2="80" stroke="#8b5cf6" stroke-width="3" />
+  <text x="600" y="110" text-anchor="middle" fill="#8b5cf6" font-family="Arial, sans-serif" font-size="20" letter-spacing="8">HIIT vs STEADY-STATE</text>
+
+  <!-- Column Headers -->
+  <g transform="translate(0, 140)">
+    <rect x="80" y="0" width="480" height="60" rx="8" fill="#ff4757" fill-opacity="0.2" />
+    <text x="320" y="40" text-anchor="middle" fill="#ff4757" font-family="Arial, sans-serif" font-size="32" font-weight="bold">HIIT</text>
+
+    <rect x="640" y="0" width="480" height="60" rx="8" fill="#2ed573" fill-opacity="0.2" />
+    <text x="880" y="40" text-anchor="middle" fill="#2ed573" font-family="Arial, sans-serif" font-size="32" font-weight="bold">STEADY-STATE</text>
+  </g>
+
+  <!-- Comparison Rows -->
+  <g transform="translate(0, 240)">
+    <!-- Row 1: Calories/min -->
+    <text x="60" y="0" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" opacity="0.7">CALORIES/MIN</text>
+    <text x="60" y="25" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" opacity="0.5">Burn Rate</text>
+
+    <!-- HIIT Bar -->
+    <rect x="80" y="-15" width="400" height="35" rx="17.5" fill="#12121a" stroke="#ff4757" stroke-width="1" />
+    <rect x="80" y="-15" width="360" height="35" rx="17.5" fill="url(#hiitGradient)" />
+    <text x="480" y="10" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="bold">12-15</text>
+
+    <!-- Cardio Bar -->
+    <rect x="640" y="-15" width="400" height="35" rx="17.5" fill="#12121a" stroke="#2ed573" stroke-width="1" />
+    <rect x="640" y="-15" width="200" height="35" rx="17.5" fill="url(#cardioGradient)" />
+    <text x="1040" y="10" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="bold">6-8</text>
+
+    <!-- Row 2: Afterburn -->
+    <g transform="translate(0, 70)">
+      <text x="60" y="0" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" opacity="0.7">AFTERBURN</text>
+      <text x="60" y="25" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" opacity="0.5">EPOC Effect</text>
+
+      <!-- HIIT -->
+      <circle cx="320" cy="5" r="50" fill="#ff4757" fill-opacity="0.3" />
+      <circle cx="320" cy="5" r="35" fill="#ff4757" fill-opacity="0.6" />
+      <circle cx="320" cy="5" r="20" fill="#ff4757" />
+      <text x="320" y="65" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="bold">HIGH</text>
+
+      <!-- Cardio -->
+      <circle cx="880" cy="5" r="50" fill="#2ed573" fill-opacity="0.2" />
+      <circle cx="880" cy="5" r="30" fill="#2ed573" fill-opacity="0.4" />
+      <circle cx="880" cy="5" r="15" fill="#2ed573" fill-opacity="0.6" />
+      <text x="880" y="65" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="bold">LOW</text>
+    </g>
+
+    <!-- Row 3: Time Required -->
+    <g transform="translate(0, 170)">
+      <text x="60" y="0" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" opacity="0.7">TIME REQUIRED</text>
+      <text x="60" y="25" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" opacity="0.5">Session Length</text>
+
+      <!-- HIIT Clock -->
+      <circle cx="320" cy="20" r="55" fill="none" stroke="#ff4757" stroke-width="4" stroke-dasharray="207" stroke-dashoffset="155" transform="rotate(-90 320 20)" />
+      <text x="320" y="18" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14">15-25</text>
+      <text x="320" y="38" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" opacity="0.7">min</text>
+
+      <!-- Cardio Clock -->
+      <circle cx="880" cy="20" r="55" fill="none" stroke="#2ed573" stroke-width="4" stroke-dasharray="207" stroke-dashoffset="52" transform="rotate(-90 880 20)" />
+      <text x="880" y="18" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14">45-60</text>
+      <text x="880" y="38" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" opacity="0.7">min</text>
+    </g>
+
+    <!-- Row 4: Muscle Preservation -->
+    <g transform="translate(0, 310)">
+      <text x="60" y="0" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" opacity="0.7">MUSCLE</text>
+      <text x="60" y="25" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" opacity="0.7">PRESERVATION</text>
+
+      <!-- HIIT -->
+      <rect x="220" y="-25" width="200" height="70" rx="35" fill="#ff4757" fill-opacity="0.2" stroke="#ff4757" stroke-width="2" />
+      <text x="320" y="18" text-anchor="middle" fill="#ff4757" font-family="Arial, sans-serif" font-size="22" font-weight="bold">BETTER</text>
+
+      <!-- Cardio -->
+      <rect x="780" y="-25" width="200" height="70" rx="35" fill="#2ed573" fill-opacity="0.2" stroke="#2ed573" stroke-width="2" />
+      <text x="880" y="18" text-anchor="middle" fill="#2ed573" font-family="Arial, sans-serif" font-size="22" font-weight="bold">RISK OF LOSS</text>
+    </g>
+
+    <!-- Row 5: Total Calories -->
+    <g transform="translate(0, 410)">
+      <text x="60" y="0" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" opacity="0.7">TOTAL CALORIES</text>
+      <text x="60" y="25" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" opacity="0.5">Per Session</text>
+
+      <!-- HIIT -->
+      <rect x="200" y="-15" width="240" height="35" rx="17.5" fill="#ff4757" fill-opacity="0.3" />
+      <rect x="200" y="-15" width="180" height="35" rx="17.5" fill="#ff4757" />
+      <text x="320" y="10" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="bold">MEDIUM</text>
+
+      <!-- Cardio -->
+      <rect x="760" y="-15" width="240" height="35" rx="17.5" fill="#2ed573" fill-opacity="0.3" />
+      <rect x="760" y="-15" width="240" height="35" rx="17.5" fill="#2ed573" />
+      <text x="880" y="10" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="bold">HIGH</text>
+    </g>
+
+    <!-- Row 6: Beginner Friendly -->
+    <g transform="translate(0, 500)">
+      <text x="60" y="0" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" opacity="0.7">BEGINNER</text>
+      <text x="60" y="25" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" opacity="0.7">FRIENDLY</text>
+
+      <!-- HIIT -->
+      <circle cx="320" cy="5" r="40" fill="#ff4757" fill-opacity="0.2" />
+      <text x="320" y="12" text-anchor="middle" fill="#ff4757" font-family="Arial, sans-serif" font-size="48" font-weight="bold">✕</text>
+
+      <!-- Cardio -->
+      <circle cx="880" cy="5" r="40" fill="#2ed573" fill-opacity="0.2" />
+      <text x="880" y="12" text-anchor="middle" fill="#2ed573" font-family="Arial, sans-serif" font-size="48" font-weight="bold">✓</text>
+    </g>
+
+    <!-- Row 7: Recovery Demands -->
+    <g transform="translate(0, 600)">
+      <text x="60" y="0" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" opacity="0.7">RECOVERY</text>
+      <text x="60" y="25" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" opacity="0.7">DEMANDS</text>
+
+      <!-- HIIT Battery -->
+      <rect x="260" y="-15" width="120" height="50" rx="4" fill="#ff4757" fill-opacity="0.3" stroke="#ff4757" stroke-width="2" />
+      <rect x="260" y="-15" width="120" height="50" rx="4" fill="#ff4757" />
+      <rect x="388" y="-12" width="4" height="44" rx="2" fill="#12121a" />
+      <text x="320" y="55" text-anchor="middle" fill="#ff4757" font-family="Arial, sans-serif" font-size="20" font-weight="bold">HIGH</text>
+
+      <!-- Cardio Battery -->
+      <rect x="820" y="-15" width="120" height="50" rx="4" fill="#2ed573" fill-opacity="0.3" stroke="#2ed573" stroke-width="2" />
+      <rect x="820" y="-15" width="40" height="50" rx="4" fill="#2ed573" />
+      <rect x="948" y="-12" width="4" height="44" rx="2" fill="#12121a" />
+      <text x="880" y="55" text-anchor="middle" fill="#2ed573" font-family="Arial, sans-serif" font-size="20" font-weight="bold">LOW</text>
+    </g>
+  </g>
+
+  <!-- Bottom Summary Section -->
+  <g transform="translate(0, 860)">
+    <text x="600" y="0" text-anchor="middle" fill="#8b5cf6" font-family="Arial, sans-serif" font-size="14" opacity="0.8">HIIT: INTENSITY OVER DURATION</text>
+    <text x="600" y="22" text-anchor="middle" fill="#8b5cf6" font-family="Arial, sans-serif" font-size="14" opacity="0.8">STEADY-STATE: CONSISTENCY OVER INTENSITY</text>
+  </g>
+
+  <!-- Decorative Elements -->
+  <circle cx="1100" cy="150" r="3" fill="#8b5cf6" opacity="0.5" />
+  <circle cx="1080" cy="170" r="2" fill="#8b5cf6" opacity="0.3" />
+  <circle cx="1120" cy="180" r="2.5" fill="#8b5cf6" opacity="0.4" />
+  <circle cx="100" cy="150" r="3" fill="#8b5cf6" opacity="0.5" />
+  <circle cx="120" cy="170" r="2" fill="#8b5cf6" opacity="0.3" />
+</svg>
