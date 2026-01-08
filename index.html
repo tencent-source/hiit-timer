@@ -385,144 +385,6 @@
             color: var(--text-muted);
         }
 
-        /* Programs Section */
-        .programs-section {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 80px 24px;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-header h2 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-
-        .section-header p {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .programs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-        }
-
-        .program-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 32px;
-            transition: all 0.3s;
-            position: relative;
-        }
-
-        .program-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent-purple);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .program-badge {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: var(--accent-work);
-            color: white;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-
-        .program-icon {
-            width: 56px;
-            height: 56px;
-            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        .program-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-
-        .program-description {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .program-features {
-            list-style: none;
-            margin-bottom: 24px;
-        }
-
-        .program-features li {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            padding: 8px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .program-features li::before {
-            content: '✓';
-            color: var(--accent-rest);
-            font-weight: 700;
-        }
-
-        .program-price {
-            display: flex;
-            align-items: baseline;
-            gap: 8px;
-            margin-bottom: 20px;
-        }
-
-        .price-amount {
-            font-size: 2rem;
-            font-weight: 800;
-        }
-
-        .price-period {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        .btn-buy {
-            width: 100%;
-            padding: 16px;
-            background: linear-gradient(135deg, var(--accent-work), var(--accent-purple));
-            border: none;
-            border-radius: 12px;
-            color: white;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .btn-buy:hover {
-            transform: scale(1.02);
-            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
-        }
-
         /* Features Section */
         .features-section {
             background: var(--bg-card);
@@ -579,61 +441,6 @@
             text-decoration: none;
         }
 
-        /* Modal */
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            align-items: center;
-            justify-content: center;
-            padding: 24px;
-        }
-
-        .modal-overlay.active {
-            display: flex;
-        }
-
-        .modal {
-            background: var(--bg-card);
-            border-radius: 24px;
-            max-width: 500px;
-            width: 100%;
-            padding: 40px;
-            border: 1px solid var(--border);
-            position: relative;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 40px;
-            height: 40px;
-            background: var(--bg-elevated);
-            border: none;
-            border-radius: 10px;
-            color: var(--text-secondary);
-            cursor: pointer;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .modal h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        #paypal-button-container {
-            margin-top: 20px;
-        }
-
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
@@ -686,7 +493,6 @@
             <div class="logo">HIIT Timer</div>
             <div class="nav-links">
                 <a href="#timer">Timer</a>
-                <a href="#programs">Programs</a>
                 <a href="#features">Features</a>
             </div>
         </div>
@@ -802,87 +608,9 @@
         </div>
     </section>
 
-    <section class="programs-section" id="programs">
-        <div class="section-header">
-            <h2>Premium Workout Programs</h2>
-            <p>Take your training to the next level with our professionally designed workout programs</p>
-        </div>
-
-        <div class="programs-grid">
-            <div class="program-card">
-                <span class="program-badge">Popular</span>
-                <div class="program-icon">🔥</div>
-                <h3 class="program-title">30-Day HIIT Challenge</h3>
-                <p class="program-description">Progressive 30-day program designed to boost metabolism and build endurance. Perfect for beginners to intermediate.</p>
-                <ul class="program-features">
-                    <li>30 unique workouts</li>
-                    <li>Video demonstrations</li>
-                    <li>Nutrition guide included</li>
-                    <li>Progress tracker</li>
-                </ul>
-                <div class="program-price">
-                    <span class="price-amount">$19</span>
-                    <span class="price-period">one-time</span>
-                </div>
-                <button class="btn-buy" onclick="openCheckout('30day', 19)">Get Program</button>
-            </div>
-
-            <div class="program-card">
-                <div class="program-icon">💪</div>
-                <h3 class="program-title">Advanced Tabata Mastery</h3>
-                <p class="program-description">Intense 8-week program for experienced athletes. Push your limits with advanced Tabata protocols.</p>
-                <ul class="program-features">
-                    <li>56 workouts (8 weeks)</li>
-                    <li>Advanced techniques</li>
-                    <li>Recovery protocols</li>
-                    <li>Performance analytics</li>
-                </ul>
-                <div class="program-price">
-                    <span class="price-amount">$39</span>
-                    <span class="price-period">one-time</span>
-                </div>
-                <button class="btn-buy" onclick="openCheckout('advanced', 39)">Get Program</button>
-            </div>
-
-            <div class="program-card">
-                <span class="program-badge">Best Value</span>
-                <div class="program-icon">⭐</div>
-                <h3 class="program-title">Complete Bundle</h3>
-                <p class="program-description">All programs plus exclusive bonus content. Lifetime access to all future updates and new programs.</p>
-                <ul class="program-features">
-                    <li>All current programs</li>
-                    <li>Lifetime updates</li>
-                    <li>Exclusive bonus workouts</li>
-                    <li>Priority support</li>
-                </ul>
-                <div class="program-price">
-                    <span class="price-amount">$49</span>
-                    <span class="price-period">lifetime</span>
-                </div>
-                <button class="btn-buy" onclick="openCheckout('bundle', 49)">Get Bundle</button>
-            </div>
-        </div>
-    </section>
-
     <footer>
         <p>Free HIIT Timer — No account required. Your workouts, your privacy.</p>
     </footer>
-
-    <!-- Checkout Modal -->
-    <div class="modal-overlay" id="checkoutModal">
-        <div class="modal">
-            <button class="modal-close" onclick="closeCheckout()">×</button>
-            <h3 id="modalTitle">Complete Purchase</h3>
-            <p style="color: var(--text-secondary); margin-bottom: 20px;">
-                <span id="modalProduct">30-Day HIIT Challenge</span> — 
-                <strong id="modalPrice">$19</strong>
-            </p>
-            <div id="paypal-button-container"></div>
-        </div>
-    </div>
-
-    <!-- PayPal SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=EJlc_QKn-QthM4eFuhlZLZ4UI_IUzs65o9701oi750hR00zerhDj7daYfSc6Uru1bNaGlNJPnni7bWdN&currency=USD"></script>
 
     <script>
         // Timer State
@@ -891,7 +619,7 @@
             restTime: 10,
             rounds: 8,
             currentRound: 0,
-            currentPhase: 'ready', // ready, prepare, work, rest, complete
+            currentPhase: 'ready',
             timeRemaining: 0,
             isRunning: false,
             totalPhaseTime: 0,
@@ -1142,67 +870,6 @@
 
         // Initialize
         updateDisplay();
-
-        // PayPal Checkout
-        let currentProduct = null;
-        let currentPrice = null;
-
-        function openCheckout(product, price) {
-            currentProduct = product;
-            currentPrice = price;
-            
-            const productNames = {
-                '30day': '30-Day HIIT Challenge',
-                'advanced': 'Advanced Tabata Mastery',
-                'bundle': 'Complete Bundle'
-            };
-            
-            document.getElementById('modalProduct').textContent = productNames[product];
-            document.getElementById('modalPrice').textContent = '$' + price;
-            document.getElementById('checkoutModal').classList.add('active');
-            
-            // Clear previous buttons
-            document.getElementById('paypal-button-container').innerHTML = '';
-            
-            // Render PayPal buttons
-            paypal.Buttons({
-                style: {
-                    layout: 'vertical',
-                    color: 'black',
-                    shape: 'rect',
-                    label: 'paypal'
-                },
-                createOrder: function(data, actions) {
-                    return actions.order.create({
-                        purchase_units: [{
-                            description: productNames[currentProduct],
-                            amount: {
-                                value: currentPrice.toString()
-                            }
-                        }]
-                    });
-                },
-                onApprove: function(data, actions) {
-                    return actions.order.capture().then(function(details) {
-                        closeCheckout();
-                        alert('Thank you, ' + details.payer.name.given_name + '! Your purchase was successful. Check your email for the download link.');
-                    });
-                },
-                onError: function(err) {
-                    console.error('PayPal error:', err);
-                    alert('There was an error processing your payment. Please try again.');
-                }
-            }).render('#paypal-button-container');
-        }
-
-        function closeCheckout() {
-            document.getElementById('checkoutModal').classList.remove('active');
-        }
-
-        // Close modal on overlay click
-        document.getElementById('checkoutModal').addEventListener('click', function(e) {
-            if (e.target === this) closeCheckout();
-        });
 
         // Keyboard shortcuts
         document.addEventListener('keydown', (e) => {
