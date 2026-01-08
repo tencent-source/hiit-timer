@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is HIIT? The Complete Beginner's Guide to High-Intensity Interval Training</title>
+    <meta name="description" content="Learn everything about HIIT (High-Intensity Interval Training). Discover the science, benefits, how to start, and sample workouts for beginners.">
+    <meta name="keywords" content="what is HIIT, HIIT for beginners, high intensity interval training, HIIT explained, HIIT benefits, how to do HIIT">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tencent-source.github.io/hiit-timer/blog/what-is-hiit-complete-beginners-guide.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "What is HIIT? The Complete Beginner's Guide",
+        "description": "Everything you need to know about High-Intensity Interval Training",
+        "author": {"@type": "Organization", "name": "HIIT Timer"},
+        "publisher": {"@type": "Organization", "name": "HIIT Timer"},
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-01-01"
+    }
+    </script>
+    <style>
+        :root {
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-elevated: #1a1a24;
+            --accent-work: #ff4757;
+            --accent-rest: #2ed573;
+            --accent-purple: #8b5cf6;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --border: #27272a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+        nav {
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-work), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        .back-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { color: var(--text-primary); }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        .breadcrumb {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+        .breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .tag {
+            background: rgba(139, 92, 246, 0.15);
+            color: var(--accent-purple);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+        ul, ol {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+        strong {
+            color: var(--text-primary);
+        }
+        .highlight-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent-purple);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 32px 0;
+        }
+        .highlight-box h4 {
+            color: var(--accent-purple);
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        .highlight-box p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .workout-example {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            margin: 32px 0;
+        }
+        .workout-example h4 {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .workout-step {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .workout-step:last-child {
+            border-bottom: none;
+        }
+        .step-num {
+            width: 32px;
+            height: 32px;
+            background: var(--accent-purple);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+        .step-content {
+            flex: 1;
+        }
+        .step-content strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+        .step-content span {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, rgba(255, 71, 87, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin: 48px 0;
+        }
+        .cta-box h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        .cta-box p {
+            margin-bottom: 24px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, var(--accent-work), var(--accent-purple));
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: scale(1.05); }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 24px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 60px;
+        }
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin: 0 12px;
+        }
+        @media (max-width: 640px) {
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="/" class="logo">HIIT Timer</a>
+            <a href="/blog/" class="back-link">← All Articles</a>
+        </div>
+    </nav>
+
+    <article class="container">
+        <div class="breadcrumb">
+            <a href="/">Home</a> / <a href="/blog/">Blog</a> / What is HIIT?
+        </div>
+
+        <h1>What is HIIT? The Complete Beginner's Guide to High-Intensity Interval Training</h1>
+        
+        <div class="meta">
+            <span class="tag">Beginner</span>
+            <span>8 min read</span>
+            <span>Updated January 2025</span>
+        </div>
+
+        <p>High-Intensity Interval Training, commonly known as HIIT, has revolutionized the fitness world. But what exactly is it, and why has it become one of the most popular workout methods? This guide covers everything you need to know to get started.</p>
+
+        <h2>What is HIIT?</h2>
+        <p>HIIT is a training technique that alternates between short bursts of intense exercise and brief recovery periods. Unlike steady-state cardio (like jogging at the same pace for 30 minutes), HIIT pushes you to work at near-maximum effort for short intervals, followed by rest or low-intensity movement.</p>
+        
+        <p>A typical HIIT workout might look like this: 30 seconds of all-out sprinting, followed by 30 seconds of walking, repeated for 15-20 minutes. The key is the <strong>intensity</strong>—during work intervals, you should be at 80-95% of your maximum heart rate.</p>
+
+        <div class="highlight-box">
+            <h4>Key Definition</h4>
+            <p>HIIT = Short bursts of maximum effort + Brief recovery periods + Repeat</p>
+        </div>
+
+        <h2>The Science Behind HIIT</h2>
+        <p>HIIT's effectiveness isn't just gym lore—it's backed by decades of scientific research. Here's why it works:</p>
+
+        <h3>EPOC: The Afterburn Effect</h3>
+        <p>After a HIIT workout, your body continues burning calories at an elevated rate for hours. This phenomenon is called Excess Post-Exercise Oxygen Consumption (EPOC). Studies show HIIT can boost your metabolic rate for up to 24 hours after training.</p>
+
+        <h3>Improved VO2 Max</h3>
+        <p>VO2 max measures your body's ability to use oxygen during exercise—a key indicator of cardiovascular fitness. Research published in the Journal of Physiology found that just 6 weeks of HIIT improved VO2 max by 15%, compared to only 10% for traditional endurance training.</p>
+
+        <h3>Time Efficiency</h3>
+        <p>A landmark study from McMaster University showed that 1 minute of intense exercise within a 10-minute workout produced similar benefits to 45 minutes of moderate cycling. For busy people, this is game-changing.</p>
+
+        <h2>Benefits of HIIT Training</h2>
+        <ul>
+            <li><strong>Burns more calories in less time</strong> — Get the benefits of a 1-hour workout in 20-30 minutes</li>
+            <li><strong>Increases metabolic rate</strong> — Continue burning calories hours after your workout</li>
+            <li><strong>Improves cardiovascular health</strong> — Strengthens your heart and improves blood pressure</li>
+            <li><strong>Builds both strength and endurance</strong> — Develop power while improving stamina</li>
+            <li><strong>Requires no equipment</strong> — Bodyweight HIIT is just as effective</li>
+            <li><strong>Reduces blood sugar</strong> — Particularly beneficial for insulin sensitivity</li>
+            <li><strong>Reduces body fat</strong> — Especially effective for reducing visceral fat</li>
+        </ul>
+
+        <h2>How to Get Started with HIIT</h2>
+        <p>Ready to try HIIT? Here's how to begin safely and effectively:</p>
+
+        <h3>1. Start with a Fitness Assessment</h3>
+        <p>HIIT is intense. If you're new to exercise or have health concerns, consult a doctor first. Even if you're healthy, start conservatively—you can always increase intensity.</p>
+
+        <h3>2. Choose Your Work-to-Rest Ratio</h3>
+        <p>Beginners should start with longer rest periods. Here are common ratios:</p>
+        <ul>
+            <li><strong>Beginner:</strong> 1:3 ratio (20 seconds work, 60 seconds rest)</li>
+            <li><strong>Intermediate:</strong> 1:2 ratio (30 seconds work, 60 seconds rest)</li>
+            <li><strong>Advanced:</strong> 1:1 ratio (30 seconds work, 30 seconds rest)</li>
+            <li><strong>Elite:</strong> 2:1 ratio (40 seconds work, 20 seconds rest)</li>
+        </ul>
+
+        <h3>3. Pick Your Exercises</h3>
+        <p>Any exercise can become HIIT if you do it intensely. Good options include:</p>
+        <ul>
+            <li>Sprinting or running in place</li>
+            <li>Burpees</li>
+            <li>Jump squats</li>
+            <li>Mountain climbers</li>
+            <li>Kettlebell swings</li>
+            <li>Cycling</li>
+            <li>Jump rope</li>
+        </ul>
+
+        <h2>Sample Beginner HIIT Workout</h2>
+        <div class="workout-example">
+            <h4>20-Minute Beginner HIIT (No Equipment)</h4>
+            <div class="workout-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                    <strong>Warm-up</strong>
+                    <span>5 minutes of light jogging, arm circles, and dynamic stretches</span>
+                </div>
+            </div>
+            <div class="workout-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                    <strong>Work: Jumping Jacks</strong>
+                    <span>20 seconds at maximum effort</span>
+                </div>
+            </div>
+            <div class="workout-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                    <strong>Rest: Walk in Place</strong>
+                    <span>40 seconds of active recovery</span>
+                </div>
+            </div>
+            <div class="workout-step">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                    <strong>Repeat</strong>
+                    <span>8-10 rounds total, alternating exercises (squats, high knees, mountain climbers)</span>
+                </div>
+            </div>
+            <div class="workout-step">
+                <div class="step-num">5</div>
+                <div class="step-content">
+                    <strong>Cool-down</strong>
+                    <span>5 minutes of stretching</span>
+                </div>
+            </div>
+        </div>
+
+        <h2>Common HIIT Mistakes to Avoid</h2>
+        <ol>
+            <li><strong>Going too intense, too soon</strong> — Build up gradually to prevent injury</li>
+            <li><strong>Skipping warm-up</strong> — Cold muscles are injury-prone muscles</li>
+            <li><strong>Doing HIIT every day</strong> — Your body needs recovery; 2-3 sessions per week is optimal</li>
+            <li><strong>Poor form for speed</strong> — Quality over quantity, always</li>
+            <li><strong>Not actually going intense</strong> — Work intervals should feel hard (7-9 on a 1-10 scale)</li>
+        </ol>
+
+        <h2>How Often Should You Do HIIT?</h2>
+        <p>HIIT is demanding on your body. For most people, <strong>2-3 sessions per week</strong> with at least one rest day between sessions is ideal. This allows your muscles and nervous system to recover fully.</p>
+        
+        <p>On non-HIIT days, you can do lower-intensity activities like walking, swimming, or yoga. This approach (called "polarized training") may actually produce better results than doing moderate-intensity exercise every day.</p>
+
+        <div class="cta-box">
+            <h3>Ready to Try HIIT?</h3>
+            <p>Use our free timer to structure your workouts. Set your work and rest intervals, and let the timer guide you through each round.</p>
+            <a href="/" class="btn">Start Your First HIIT Workout →</a>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>HIIT is one of the most time-efficient, science-backed training methods available. Whether your goal is fat loss, improved fitness, or better health, incorporating HIIT into your routine can deliver impressive results in minimal time.</p>
+        
+        <p>Remember: start gradually, focus on form, allow adequate recovery, and most importantly—push yourself during those work intervals. That's where the magic happens.</p>
+    </article>
+
+    <footer>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/blog/">Blog</a>
+    </footer>
+</body>
+</html>

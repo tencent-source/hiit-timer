@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | HIIT Timer - Free Online Workout Timer</title>
+    <meta name="description" content="Learn about HIIT Timer - a free, privacy-focused workout timer for HIIT, Tabata, and interval training.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tencent-source.github.io/hiit-timer/about.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-elevated: #1a1a24;
+            --accent-work: #ff4757;
+            --accent-rest: #2ed573;
+            --accent-purple: #8b5cf6;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --border: #27272a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+        nav {
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-work), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        .back-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { color: var(--text-primary); }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        h1 span {
+            background: linear-gradient(135deg, var(--accent-work), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .intro {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 50px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        .feature-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .feature-card p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, rgba(255, 71, 87, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+        .cta-box p {
+            margin-bottom: 24px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, var(--accent-work), var(--accent-purple));
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        .contact-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-top: 50px;
+        }
+        .contact-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+        }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 24px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 60px;
+        }
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin: 0 12px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="/" class="logo">HIIT Timer</a>
+            <a href="/" class="back-link">← Back to Timer</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>About <span>HIIT Timer</span></h1>
+        <p class="intro">A free, fast, and privacy-focused workout timer built for athletes who value simplicity.</p>
+
+        <h2>Our Mission</h2>
+        <p>We believe fitness tools should be free, fast, and respect your privacy. No accounts. No tracking. No app downloads. Just open your browser and start training.</p>
+        <p>HIIT Timer was created out of frustration with bloated fitness apps that require signups, send notifications, and track everything you do. We wanted something simpler.</p>
+
+        <h2>What Makes Us Different</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Instant Access</h3>
+                <p>No downloads, no signups. Works instantly in any browser.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Privacy First</h3>
+                <p>We don't track you. Your workout data stays on your device.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💯</div>
+                <h3>100% Free</h3>
+                <p>No premium tiers, no paywalls. The full timer is free forever.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Works Everywhere</h3>
+                <p>Phone, tablet, laptop, desktop. Any device with a browser.</p>
+            </div>
+        </div>
+
+        <h2>The Science Behind HIIT</h2>
+        <p>High-Intensity Interval Training (HIIT) alternates between intense exercise bursts and rest periods. Research shows HIIT can:</p>
+        <p>• Burn more calories in less time than steady-state cardio<br>
+        • Improve cardiovascular health and VO2 max<br>
+        • Boost metabolism for hours after your workout<br>
+        • Build both strength and endurance simultaneously</p>
+        <p>The Tabata protocol (20 seconds work, 10 seconds rest, 8 rounds) is one of the most researched and effective HIIT formats, originally developed by Dr. Izumi Tabata for Olympic speed skaters.</p>
+
+        <div class="cta-box">
+            <h3>Ready to Train?</h3>
+            <p>Stop reading, start sweating. Your workout is one click away.</p>
+            <a href="/" class="btn">Start Timer →</a>
+        </div>
+
+        <div class="contact-section">
+            <h3>Contact & Feedback</h3>
+            <p>Found a bug? Have a feature request? We'd love to hear from you.</p>
+            <p>Visit our <a href="https://github.com/tencent-source/hiit-timer/issues" target="_blank" rel="noopener">GitHub repository</a> to report issues or suggest improvements.</p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/blog/">Blog</a>
+    </footer>
+</body>
+</html>

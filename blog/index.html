@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIIT Training Blog | Workout Tips, Guides & Science</title>
+    <meta name="description" content="Expert guides on HIIT, Tabata, and interval training. Learn workout techniques, science-backed tips, and how to maximize your training results.">
+    <meta name="keywords" content="HIIT blog, workout tips, Tabata guide, interval training, fitness articles, exercise science">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tencent-source.github.io/hiit-timer/blog/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-elevated: #1a1a24;
+            --accent-work: #ff4757;
+            --accent-rest: #2ed573;
+            --accent-purple: #8b5cf6;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --border: #27272a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        nav {
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-content {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-work), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .nav-links a:hover { color: var(--text-primary); }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        h1 span {
+            background: linear-gradient(135deg, var(--accent-work), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header p {
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .articles-grid {
+            display: grid;
+            gap: 32px;
+        }
+        .article-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            transition: all 0.3s;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 24px;
+            text-decoration: none;
+            color: inherit;
+        }
+        .article-card:hover {
+            border-color: var(--accent-purple);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .article-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--bg-elevated);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+        }
+        .article-content h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+        .article-content p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+        .article-meta {
+            display: flex;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .tag {
+            background: rgba(139, 92, 246, 0.15);
+            color: var(--accent-purple);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, rgba(255, 71, 87, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 48px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .cta-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+        .cta-section p {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 16px 36px;
+            background: linear-gradient(135deg, var(--accent-work), var(--accent-purple));
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: scale(1.05); }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 24px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 60px;
+        }
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin: 0 12px;
+        }
+        @media (max-width: 640px) {
+            .article-card {
+                grid-template-columns: 1fr;
+            }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="/" class="logo">HIIT Timer</a>
+            <div class="nav-links">
+                <a href="/">Timer</a>
+                <a href="/blog/">Blog</a>
+                <a href="/about.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1>The <span>HIIT Training</span> Blog</h1>
+            <p>Science-backed guides, workout tips, and everything you need to master high-intensity interval training.</p>
+        </div>
+
+        <div class="articles-grid">
+            <a href="/blog/what-is-hiit-complete-beginners-guide.html" class="article-card">
+                <div class="article-icon">🔥</div>
+                <div class="article-content">
+                    <h2>What is HIIT? The Complete Beginner's Guide</h2>
+                    <p>Everything you need to know about High-Intensity Interval Training, from the science behind it to how to get started today.</p>
+                    <div class="article-meta">
+                        <span class="tag">Beginner</span>
+                        <span>8 min read</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/blog/tabata-protocol-4-minute-workout.html" class="article-card">
+                <div class="article-icon">⏱️</div>
+                <div class="article-content">
+                    <h2>The Tabata Protocol: The 4-Minute Workout That Works</h2>
+                    <p>Discover the Olympic training method that burns fat and builds endurance in just 4 minutes. Learn the science and how to do it right.</p>
+                    <div class="article-meta">
+                        <span class="tag">Training</span>
+                        <span>6 min read</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/blog/hiit-vs-steady-state-cardio.html" class="article-card">
+                <div class="article-icon">⚡</div>
+                <div class="article-content">
+                    <h2>HIIT vs Steady-State Cardio: Which Burns More Fat?</h2>
+                    <p>The definitive comparison between high-intensity intervals and traditional cardio. Which is better for weight loss, endurance, and overall health?</p>
+                    <div class="article-meta">
+                        <span class="tag">Science</span>
+                        <span>7 min read</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/blog/best-hiit-exercises-no-equipment.html" class="article-card">
+                <div class="article-icon">💪</div>
+                <div class="article-content">
+                    <h2>15 Best HIIT Exercises You Can Do Without Equipment</h2>
+                    <p>No gym? No problem. These bodyweight exercises are perfect for intense interval training at home, in a hotel room, or anywhere.</p>
+                    <div class="article-meta">
+                        <span class="tag">Workouts</span>
+                        <span>10 min read</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/blog/hiit-mistakes-to-avoid.html" class="article-card">
+                <div class="article-icon">🚫</div>
+                <div class="article-content">
+                    <h2>7 HIIT Mistakes That Are Killing Your Results</h2>
+                    <p>Common errors that sabotage your workouts and how to fix them. Are you making these training mistakes?</p>
+                    <div class="article-meta">
+                        <span class="tag">Tips</span>
+                        <span>5 min read</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Start Training?</h2>
+            <p>Put your knowledge into action with our free HIIT timer. No downloads, no signups.</p>
+            <a href="/" class="btn">Launch Timer →</a>
+        </div>
+    </div>
+
+    <footer>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/blog/">Blog</a>
+    </footer>
+</body>
+</html>
